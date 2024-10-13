@@ -1,0 +1,287 @@
+:root {
+  --pilka: rgb(239, 244, 244);
+  --mygtukai: rgb(202, 194, 194);
+  --balta: white;
+  --fonas: rgb(245, 241, 236);
+  /* --opacity:0.7; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--fonas);
+  margin: 0 auto;
+  /* opacity: var(--opacity); */
+}
+
+/* opacity: 1; */
+
+.nav {
+  /* background-color: var(--balta); */
+  justify-content: space-between;
+  width: 97vw;
+  margin: 10px;
+  margin-top: 50px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  /* opacity: var(--opacity); */
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  margin: 10px;
+  justify-content: center;
+}
+
+.btn {
+  /* background-color: var(--mygtukai); */
+  list-style: none;
+  height: 50px;
+  margin-left: 25px;
+  margin-bottom: 10px;
+  padding: 15px;
+  text-align: center;
+  flex-basis: 80px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  opacity: 0.8;
+  text-transform: uppercase;
+  color: #000;
+}
+
+a:visited {
+  color: #000;
+}
+
+a:hover {
+   font-weight:bold  ;
+}
+
+a:active {
+  color: red;
+  font-weight: bold;
+
+/* .btn--secondary {
+  background-color: blueviolet;
+}
+.btn--lean {
+  transform: skewX(-10deg);
+}
+.btn--border-lg {
+  border: 5px solid whitesmoke;
+} */
+
+
+}
+
+li:hover {
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  position: relative;
+  font-size: 5vw;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+
+  /* skirtingi rasybos stiliai is google fonts */
+  /* font-family: "Sixtyfour Convergence", sans-serif; */
+  font-family: "Noto Serif", serif;
+}
+
+@media (max-width: 360px) {
+  li {
+    box-sizing: border-box;
+    flex-basis: 350px;
+    margin-left: 5rem;
+    margin-right: 4rem;
+    padding: 0.5rem;
+  }
+  ul {
+    display: inline;
+  }
+  .nav {
+    margin-top: 10px;
+  }
+  .logo {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  ul {
+    display: inline;
+  }
+}
+@media (max-width: 660px) {
+  li {
+    flex-basis: 100px;
+    flex-grow: 1;
+    margin: 5px;
+    padding: 15px;
+  }
+  ul {
+    margin: 5px;
+    /* display: inline; */
+  }
+  .nav {
+    margin-top: 20px;
+  }
+  /* .container-3 {
+    width: 97vw;
+  } */
+}
+
+.container {
+  width: 97vw;
+  /* background: var(--balta); */
+  margin: 10px;
+  margin-top: 50px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 30%;
+  /* background: var(--pilka); */
+  flex-grow: 1;
+  border-radius: 15px;
+  margin: 15px;
+  padding: 30px;
+}
+.container-3 {
+  width: 97vw;
+  /* background: var(--balta); */
+  margin: 10px;
+  margin-top: 50px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.side {
+  width: 40%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.box-5,
+.box-6,
+.box-7,
+.box-8 {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+h4 {
+  text-align: center;
+  margin: 2em;
+  opacity: 0.7;
+}
+hr {
+  opacity: 0.2;
+}
+
+.fa-brands {
+  font-size: 5em;
+  color: #000;
+  margin-top: 5px;
+}
+
+.iconos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+.fa-solid {
+  font-size: 2em;
+  color: black;
+  margin: 0 auto;
+}
+
+/* Animacijos elementas */
+.parent {
+  background: rgb(23, 83, 103);
+  height: 400px;
+  width: 400px;
+}
+.child {
+  background: red;
+  height: 50%;
+  width: 50%;
+  animation: left-to-right 3s ease-in forwards infinite alternate;
+}
+
+.parent:hover .child {
+  animation-play-state: paused;
+}
+
+@keyframes left-to-right {
+  0% {
+    background-color: red;
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateY(100%);
+  }
+  66% {
+    transform: translateX(100%) translateY(100%);
+  }
+  100% {
+    background: greenyellow;
+    transform: translateX(100%);
+  }
+}
+/* animacijos pabaiga */
+
+.parent-2 {
+  background: rgb(23, 83, 103);
+  height: 400px;
+  width: 400px;
+}
+.child-2 {
+  background: red;
+  height: 50%;
+  width: 50%;
+  animation: left-to-right 3s ease-in forwards infinite alternate;
+}
+
+.parent-2:hover .child-2 {
+  animation-play-state: paused;
+}
+
+@keyframes left-to-right {
+  0% {
+    background-color: red;
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateY(100%);
+  }
+  66% {
+    transform: translateX(100%) translateY(100%);
+  }
+  100% {
+    background: greenyellow;
+    transform: translateX(100%);
+  }
+}
+
+.btn-info {
+  display: block;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
