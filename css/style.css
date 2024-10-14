@@ -3,7 +3,7 @@
   --mygtukai: rgb(202, 194, 194);
   --balta: white;
   --fonas: rgb(245, 241, 236);
-  /* --opacity:0.7; */
+  --opacity:0.7;
 }
 
 * {
@@ -57,14 +57,14 @@ a:visited {
 }
 
 a:hover {
-   font-weight:bold  ;
+  font-weight: bold;
 }
 
 a:active {
   color: red;
   font-weight: bold;
 
-/* .btn--secondary {
+  /* .btn--secondary {
   background-color: blueviolet;
 }
 .btn--lean {
@@ -73,8 +73,6 @@ a:active {
 .btn--border-lg {
   border: 5px solid whitesmoke;
 } */
-
-
 }
 
 li:hover {
@@ -97,6 +95,13 @@ a {
   font-family: "Noto Serif", serif;
 }
 
+.iconos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
 @media (max-width: 360px) {
   li {
     box-sizing: border-box;
@@ -104,6 +109,12 @@ a {
     margin-left: 5rem;
     margin-right: 4rem;
     padding: 0.5rem;
+  }
+
+  .iconos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
   ul {
     display: inline;
@@ -119,6 +130,11 @@ a {
 @media (max-width: 500px) {
   ul {
     display: inline;
+  }
+  .iconos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
 }
 @media (max-width: 660px) {
@@ -199,12 +215,6 @@ hr {
   margin-top: 5px;
 }
 
-.iconos {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 5rem;
-}
 .fa-solid {
   font-size: 2em;
   color: black;
@@ -245,39 +255,6 @@ hr {
   }
 }
 /* animacijos pabaiga */
-
-.parent-2 {
-  background: rgb(23, 83, 103);
-  height: 400px;
-  width: 400px;
-}
-.child-2 {
-  background: red;
-  height: 50%;
-  width: 50%;
-  animation: left-to-right 3s ease-in forwards infinite alternate;
-}
-
-.parent-2:hover .child-2 {
-  animation-play-state: paused;
-}
-
-@keyframes left-to-right {
-  0% {
-    background-color: red;
-    transform: translateX(0);
-  }
-  33% {
-    transform: translateY(100%);
-  }
-  66% {
-    transform: translateX(100%) translateY(100%);
-  }
-  100% {
-    background: greenyellow;
-    transform: translateX(100%);
-  }
-}
 
 .btn-info {
   display: block;
